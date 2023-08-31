@@ -4,61 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PORTAFOLIO</title>
-    <link rel="stylesheet" href="src/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
-<body>
-  <header class="inicio1">
-    <nav>
-        <ul class="inicio">
-            <li><a class="cajon1" href="Portafolio.html">INICIO</a></li>
-        </ul>
-    </nav>
+<body class="bg-secundary">
+  <header class="container-fluid bg-primary" style="padding: 3%;">
+      <div class="col-10 d-flex align-items-center justify-content-end">
+        <a href="Portafolio.html" class="btn btn-light"><h2>INICIO</h2></a>
+      </div>
+    </div>
   </header>
-  <section>
-    <article>
-      <h2 class="titulos">¿CÓMO PODEMOS AYUDARTE?</h2>
-    </article>
-  </section>
-  <section>
-    <form action="#" method="post">
-      <ul class="contactenos">
-        <div class="izquierda">
-          <li><label for="name">NOMBRES :</label>
-            <input type="text" id="names" name="user_name" />
-          </li>
-          <li><label for="mail">CORREO ELECTRÓNICO :</label>
-              <input type="email" id="mail" name="user_mail" />
-          </li>
-          <li> <label for="postalcode">CÓDIGO POSTAL :</label>
-            <input type="number" id="postalcode" name="user_postalcode">
-          </li>
+  <section style="margin-top: 200px; margin-left: 200px;">
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="nombre" class="text-dark">Nombre</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Nombre">
         </div>
-        <div class="derecha">
-          <li><label for="lastname">APELLIDOS :</label>
-            <input type="text" id="lastname" name="user_lastname" />
-          </li>
-          <li> <label for="country">PAÍS :</label>
-            <input type="text" id="country" name="user_country" />
-          </li>
-          <li> <label for="phonenumber">NÚMERO DE CELULAR :</label>
-            <input type="number" id="phonenumber" name="user_phonenumber">
-          </li>
+        <div class="form-group col-md-6">
+          <label for="apellido" class="text-dark">Apellido</label>
+          <input type="text" class="form-control" id="apellido" placeholder="Apellido">
         </div>
-      </ul>
-      <ul class="button1">
-        <li class="button__enviar">
-          <button class="button" type="submit">ENVIAR</button></li>
-      </ul>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="correo" class="text-dark">Correo</label>
+          <input type="email" class="form-control" id="correo" placeholder="Correo electrónico">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="telefono" class="text-dark">Teléfono</label>
+          <input type="tel" class="form-control" id="telefono" placeholder="Teléfono">
+        </div>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="pais" class="text-dark">País</label>
+        <input type="text" class="form-control" id="pais" placeholder="País">
+      </div>
+      <div style="margin-top: 20px;">
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </div>
     </form>
-  </section> 
-  <footer>
-    <h2 class="texto__sigueme">SÍGUEME</h2>
-    <nav class="personal">
-        <a class="personal__opciones" href="https://www.facebook.com/profile.php?id=100087913196808&mibextid=ZbWKwL"><img src="src/img/FACEBOOK.png" alt=""></a>
-        <a class="personal__opciones" href="https://twitter.com/RCarlosOC?t=KxIGPgFW5nik9yUk3ZEc5Q&s=09"><img src="src/img/X.png" alt=""></a>
-        <a class="personal__opciones" href="https://instagram.com/carlos.blablabla?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><img src="src/img/INSTAGRAM.png" alt=""></a>
-        <a class="personal__opciones" href="https://github.com/rcarlos7"><img src="src/img/GITHUB.png" alt=""></a>
-    </nav>
-  </footer>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
